@@ -3,6 +3,7 @@ from tkinter import *
 from  threading import Thread
 import random
 from PIL import ImageTk, Image
+from os import *
 
 screen_width = None
 screen_height = None
@@ -45,7 +46,7 @@ def askPlayerName():
     screen_width = nameWindow.winfo_screenwidth()
     screen_height = nameWindow.winfo_screenheight()
 
-    bg = ImageTk.PhotoImage(file = "./assets/background.png")
+    bg = ImageTk.PhotoImage(file = "background.png")
 
     canvas1 = Canvas( nameWindow, width = 500,height = 500)
     canvas1.pack(fill = "both", expand = True)
